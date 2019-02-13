@@ -1,0 +1,12 @@
+name: keypass-sync
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.7
+  - functools
+  - pathlib
+  - setuptools
+  # For tests
+  - pytest>=3
