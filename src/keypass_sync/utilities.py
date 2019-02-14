@@ -7,7 +7,7 @@ from pathlib import Path
 
 from google_services._utilities import logger
 
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.ERROR)
 
 
 def cast_path_into_pathlib(path_candidate):

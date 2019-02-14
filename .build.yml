@@ -5,7 +5,7 @@ sources:
   - https://git.sr.ht/~retzoh/google_services_wrapper
   - https://git.sr.ht/~retzoh/keypass_google_drive_sync
 environment:
-  repository_name: keypass_google_drice_sync
+  repository_name: keypass_google_drive_sync
   package_name: keypass-sync
   package_folder: keypass_sync
   package_path: .
@@ -51,8 +51,9 @@ tasks:
     cd google_services_wrapper
     conda env update -q -n $package_name
     pip install .
+    cd ..
 
-    cd ../$repository_name/$package_path
+    cd $repository_name/$package_path
     conda env update -q -n $package_name
 
 - setup_project_pip: |

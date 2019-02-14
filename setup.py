@@ -47,7 +47,6 @@ setup_params = dict(
         "pathlib",
         "setuptools",
         "google_services",
-        "functools"
     ],
 )
 
